@@ -1,7 +1,11 @@
-let factorial = 1;
+function factorial() {
+    let fact = 1;
 
-for (let i = 1; i < 10; i++) {
-    factorial += factorial * i;
+    for (let i = 1; i < 10; i++) {
+        fact += fact * i;
+    }
+    return fact;
 }
 
-console.log(`El factorial de de 10 es: ${factorial} `);
+exports.factorial = factorial;
+    
